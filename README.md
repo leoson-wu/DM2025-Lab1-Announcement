@@ -154,6 +154,7 @@ A browser window will open. Click "New" → "Python 3" to create a notebook.
 
 ### 10. Test Your Environment
 Open the `DM2025-Lab1-Master.ipynb`
+![test code](img/pic5ann1.png)
 Paste the script below into a notebook cell and run it:
 
 ```Python
@@ -165,13 +166,15 @@ from sklearn.datasets import fetch_20newsgroups
 from sklearn.feature_extraction.text import CountVectorizer
 import plotly as py
 import math
-import PAMI
+# !pip install PAMI
+import PAMI # if it cannot find the module 'PAMI', add a command line: !pip install PAMI before import it
 import umap
 
 categories = ['alt.atheism', 'soc.religion.christian', 'comp.graphics', 'sci.med']
 twenty_train = fetch_20newsgroups(subset='train', categories=categories, shuffle=True, random_state=42)
 ```
-![test code](img/pic5ann1.png)
+
+![test pic](img/testpic1.png)
 
 If no errors occur, your environment is ready.
 
