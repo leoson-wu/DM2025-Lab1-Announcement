@@ -86,7 +86,6 @@ Open a "Command Prompt" window in Windows or a "Terminal" window in macOS/Linux.
     cd <yourpath>
     mkdir DM2025Labs
     cd DM2025Labs
-    git init
     git clone <link you copied in the previous step>
     
 Replace \<yourpath\> by the path where you're going to store your documents. 
@@ -98,7 +97,7 @@ Below is an example, where I store my Lab in the "new" folder.
 In terminal or PowerShell:
 
 ```bash
-pip install uv
+pip3 install uv
 uv --version
 ```
 ### 6. Create a Virtual Environment with uv
@@ -111,27 +110,25 @@ This creates a .venv folder inside the project.
 
 ### 7. Install the Dependent Libraries
 
-Navigate to directory:  `DM2025-Lab1-Exercise`  
-#### Quick install
+Under project folder:  `DM2025-Lab1-Exercise`  
+#### Install Libraries
 ```bash
-uv sync
+uv add jupyter numpy pandas matplotlib plotly nltk scikit-learn seaborn PAMI umap-learn
 ```
-This installs all required Python packages: jupyter, numpy, pandas, matplotlib, plotly, nltk, scikit-learn, seaborn, pami, umap-learn   
-#### (Alternative) Manually install Libraries
-You may need to add libraries manually if the **Quick install** cannot install the required libraries successfully:  
-```bash
-uv add jupyter numpy pandas matplotlib plotly nltk scikit-learn seaborn pami umap-learn
-```
+This installs all required Python packages: jupyter, numpy, pandas, matplotlib, plotly, nltk, scikit-learn, seaborn, PAMI, umap-learn   
 You can also install extra libraries if needed.  
 ```bash
 uv add <library_name>
 ```
-#### (Alternative) If you are using Kaggle or Colab (if not, you can skip)   
-Install the library with these commands 
-![pip3 install](img/pipinstall.jpg)
+#### (Alternative) If you are using Kaggle or Colab   
+Install the library via `pip3` instead of `uv`  
+```bash
+pip3 install jupyter numpy pandas matplotlib plotly nltk scikit-learn seaborn PAMI umap-learn  
+```
+Note: In Kaggle/Colab, Python version may differ (e.g., 3.10). Some packages could behave differently.
 
 ### 8. Register Jupyter Kernel
-Navigate to directory:  `DM2025-Lab1-Exercise`  
+Under project folder:  `DM2025-Lab1-Exercise`  
 ```bash
 uv run python -m ipykernel install --user --name=dm2025lab --display-name "Python (dm2025lab)"
 ```
@@ -178,7 +175,7 @@ Run the test script.
 For missing libraries (e.g., PAMI), install manually:  
 
 ```bash
-!pip install pami
+!pip3 install PAMI
 ```
 ![kaggle](img/pic8ann1.png)
 
@@ -198,8 +195,10 @@ from sklearn.datasets import fetch_20newsgroups
 from sklearn.feature_extraction.text import CountVectorizer
 import plotly as py
 import math
-# !pip install PAMI
-import PAMI # if it cannot find the module 'PAMI', add a command line: !pip install PAMI before importing it
+# If you get "ModuleNotFoundError: No module named 'PAMI'"
+# run the following in a new Jupyter cell:
+# !pip3 install PAMI
+import PAMI
 import umap
 
 categories = ['alt.atheism', 'soc.religion.christian', 'comp.graphics', 'sci.med']
@@ -220,38 +219,6 @@ Good luck with the setup and see you on Monday, Sept 15!
 Best regards,
 The TAs
 
----
-# If everything is OK, you can start to do the lab ...
----
 
-# Save your Progress by Push 
-Remember to save your notebooks. You will also have to "Push" the changes you've made in your computer to the internet. To do this, open a "Command Prompt" window in Windows or a "Terminal" window in macOS/Linux. Type the following commands followed by the Enter key: 
 
-    cd <your path to the DM2025-Lab1-Exercise>
-    git add *
-    git commit -m "yourmessage"
-    git push 
-    
-You can replace "yourmessage" with something like "Finished Ex1 and Ex2. Added graph for Ex. 6" . You can save and commit as often as you like. Below is an example:
 
-![gitpic7](img/gitpic7.png)
-
-# Submission Guidelines and Deadline
-
-Go to the [DM Lab 1 Homework](https://github.com/leoson-wu/DM2025-Lab1-Exercise/blob/main/DM2025-Lab1-Homework.ipynb) in Git and follow the same process above. Make sure to commit and save your changes to your repository __BEFORE the deadline for each phase (September 28th and October 19th, 11:59 pm, Sunday)__. During the second phase, the answers from the first phase will not be considered if they can not be pushed on time. 
-
-Make sure to hand in 2 notebooks, including: 
-1. `DM2025-Lab1-Master.ipynb` from [DM Lab 1 Master](https://github.com/leoson-wu/DM2025-Lab1-Exercise/blob/main/DM2025-Lab1-Master.ipynb)
-2. `DM2025-Lab1-Homework.ipynb` from [DM Lab 1 Homework](https://github.com/leoson-wu/DM2025-Lab1-Exercise/blob/main/DM2025-Lab1-Homework.ipynb)
-
-![deadline](img/Deadline.png)
-
-When you're done (or at any moment), find your repository link. Open the assignment page on our [NTU COOL platform](https://cool.ntu.edu.tw/login/portal). Make a submission by pasting the link to your git repository (or the link to your Kaggle kernel) to **Lab 1 section**.  
-
-![ntucool submission](img/ntucool.png)
-
-You can find your repository link by logging into [Github](https://github.com/), clicking on your profile icon on the upper right corner, selecting "Your repositories", and clicking on the name of your repository. Then copy the link in your browser.  
-
-Again, __we will not consider pushes made after the deadline__. 
-
-That's it! We wish you Good luck!
