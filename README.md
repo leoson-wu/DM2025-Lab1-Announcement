@@ -68,8 +68,8 @@ git config --global user.email "your_email@example.com"
 ![git](img/pic6ann1.png)
 
 ### 3. Fork the Repository to your GitHub Account  
-Go to: [DM Lab 1](https://github.com/leoson-wu/DM2025-Lab1-Exercise.git) in Git,  
-Sign in to your GitHub account   
+Go to: [DM Lab 1](https://github.com/leoson-wu/DM2025-Lab1-Exercise.git) in GitHub,  
+Sign in to your GitHub account
 Click "Fork" to copy it into your own GitHub account.  
 ![fork](img/pic9ann1.png)
 
@@ -85,7 +85,7 @@ Open a "Command Prompt" window in Windows or a "Terminal" window in macOS/Linux.
     mkdir DM2025Labs
     cd DM2025Labs
     git init
-    git clone <link you copied at the previous step>
+    git clone <link you copied in the previous step>
     
 Replace \<yourpath\> by the path where you're going to store your documents. 
 Below is an example, where I store my Lab in the "new" folder.
@@ -117,8 +117,7 @@ This creates a .venv folder inside the project.
 ```bash
 uv sync
 ```
-This installs all required Python packages.
-
+This installs all required Python packages: jupyter numpy pandas matplotlib plotly nltk scikit-learn seaborn pami umap-learn   
 ### 8. (Optional) Manually install Libraries
 You may need to add libraries manually if the **step 8** cannot install the required libraries successfully:  
 ```bash
@@ -151,20 +150,15 @@ python -m notebook
 A browser window will open. Click "New" → "Python 3" to create a notebook.  
 ![open Jupyter](img/pic4ann1.png)
 
-### 10. Download NLTK Datasets
-Run the following code in the code cell for downloading NLTK Datasets    
-```Python
-import nltk
-nltk.download('punkt')
-```
-
-### 11. Test Your Environment
+### 10. Test Your Environment
+Open the `DM2025-Lab1-Master.ipynb`
 Paste the script below into a notebook cell and run it:
 
 ```Python
 import pandas as pd
 import numpy as np
 import nltk
+nltk.download('punkt') # download the NLTK datasets
 from sklearn.datasets import fetch_20newsgroups
 from sklearn.feature_extraction.text import CountVectorizer
 import plotly as py
@@ -180,21 +174,23 @@ twenty_train = fetch_20newsgroups(subset='train', categories=categories, shuffle
 If no errors occur, your environment is ready.
 
 ### Alternative: Run in Kaggle
-If you cannot set up Python locally:
-Create an account: https://www.kaggle.com/
-Go to: https://www.kaggle.com/kernels → "New Notebook"
-Run the test script.
-For missing libraries (e.g., PAMI), install manually:
+If you cannot set up Python locally:  
+Create an account: https://www.kaggle.com/  
+Go to: https://www.kaggle.com/kernels → "New Notebook"  
+Run the test script.  
+For missing libraries (e.g., PAMI), install manually:  
 
 ```bash
 !pip install pami
 ```
 ![kaggle](img/pic8ann1.png)
 
-### Optional: Run in VS Code
+### Alternative: Run in VS Code
 If using VS Code, register your kernel:
 
 ```bash
+cd <your path to the DM2025-Lab1-Exercise>
+code .
 uv run python -m ipykernel install --user --name=dm2025lab --display-name "Python (dm2025lab)"
 ```
 Then select "Python (dm2025lab)" as the kernel.
@@ -210,7 +206,7 @@ Best regards,
 The TAs
 
 ---
-# Now you can start to do the lab ...
+# If everthing is OK, you can start to do the lab ...
 ---
 
 # Save your Progress by Push 
