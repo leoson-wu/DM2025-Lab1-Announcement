@@ -2,7 +2,9 @@
 
 Hi everyone,
 
-We will have our first lab session on **September 15 (Monday)** at **9:00 AM** via our **YouTube Stream / Classroom**. Please be on time.
+We will have our first lab session (for Q&A) on **September 15 (Monday)** at **9:00 AM** via our [YouTube Stream](https://www.youtube.com/@NTHU_ISA5810_DataMining)/**Classroom**. Please be on time.
+
+The Lab tutorial video will be launched on [YouTube Channel](https://www.youtube.com/@NTHU_ISA5810_DataMining) before **September 15**.
 
 We strongly recommend setting up the environment on your personal laptop before the lab session so that you can follow along smoothly.
 
@@ -198,9 +200,9 @@ Then select "Python (dm2025lab)" as the kernel.
 
 
 ### Troubleshooting
-Ask classmates or TAs for help before the lab if you encounter installation issues.
-If you prefer a GUI for Git, use GitHub Desktop: https://desktop.github.com/
-Good luck with the setup and see you on Monday, Sept 15!
+Ask classmates or TAs for help before the lab if you encounter installation issues.  
+If you prefer a GUI for Git, use GitHub Desktop: https://desktop.github.com/  
+Good luck with the setup and see you on Monday, Sept 15!  
 
 Best regards,
 The TAs
@@ -219,15 +221,15 @@ Remember to save your notebooks. You will also have to "Push" the changes you've
     
 You can replace "yourmessage" with something like "Finished Ex1 and Ex2. Added graph for Ex. 6" . You can save and commit as often as you like. Below is an example:
 
-![gitpic5](img/gitpic5.png)
+![gitpic7](img/gitpic7.png)
 
 # Hand in your Homework
 
 Go to the [DM Lab 1 Homework](https://github.com/leoson-wu/DM2025-Lab1-Exercise/blob/main/DM2025-Lab1-Homework.ipynb) in Git and follow the same process above.  Make sure to commit and save your changes to your repository __BEFORE the deadline for each phase (September 28th and October 19th, 11:59 pm, Sunday)__. During the second phase, the answers from the first phase will not be considered if they can not be pushed on time. 
 
 Make sure to hand in 2 notebooks, including: 
-1. Take home exercises from [DM Lab 1](https://github.com/leoson-wu/DM2025-Lab1-Exercise/blob/main/DM2025-Lab1-Master.ipynb)
-2. The homework itself [DM Lab 1 Homework](https://github.com/leoson-wu/DM2025-Lab1-Exercise/blob/main/DM2025-Lab1-Homework.ipynb)
+1. `DM2025-Lab1-Master.ipynb` from [DM Lab 1](https://github.com/leoson-wu/DM2025-Lab1-Exercise/blob/main/DM2025-Lab1-Master.ipynb)
+2. `DM2025-Lab1-Homework.ipynb` from [DM Lab 1 Homework](https://github.com/leoson-wu/DM2025-Lab1-Exercise/blob/main/DM2025-Lab1-Homework.ipynb)
 
 ![gitpic6](img/gitpic6.png)
 
