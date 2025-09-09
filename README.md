@@ -69,17 +69,17 @@ git config --global user.email "your_email@example.com"
 
 ### 3. Fork the Repository to your GitHub Account  
 Go to: [DM Lab 1](https://github.com/leoson-wu/DM2025-Lab1-Exercise.git) in Git,
-Sign in your GitHub account  
+Sign in to your GitHub account   
 Click "Fork" to copy it into your own GitHub account.  
 ![fork](img/pic9ann1.png)
 
-And it will redirect you to a "copy" of the repository in your own account. Once in your account (check that your name shows up at the top left corner), Click the green button "Code", and the clipboard button besides the **link** that pops up.
+And it will redirect you to a "copy" of the repository in your own account. Once in your account (check that your name shows up at the top left corner), click the green button "Code", and the clipboard button beside the **link** that pops up. 
 
 ![gitpic3](img/gitpic3.png)
 ### 4. Create a Project Folder and Clone the Repository from your GitHub to your Project Directory   
 Choose a location for your labs and create a directory:
 
-Open a "Command Prompt" window in Windows or a "Terminal" window in MacOS/Linux. Type the following commands followed by the Enter key for each line:
+Open a "Command Prompt" window in Windows or a "Terminal" window in macOS/Linux. Type the following commands, followed by the Enter key for each line: 
 
     cd <yourpath>
     mkdir DM2025Labs
@@ -87,7 +87,7 @@ Open a "Command Prompt" window in Windows or a "Terminal" window in MacOS/Linux.
     git init
     git clone <link you copied at the previous step>
     
-Replacing \<yourpath\> by the path where you're going to store your documents.
+Replace \<yourpath\> by the path where you're going to store your documents. 
 Below is an example, where I store my Lab in the "new" folder.
 
 ![gitpic4](img/gitpic4.png)
@@ -128,8 +128,8 @@ You can also install extra libraries if needed.
 ```bash
 uv add <library_name>
 ```
-### 8. (Alternative) If you are using Kaggle or Colab (if not you can skip)  
-Install the library by these commands
+### 8. (Alternative) If you are using Kaggle or Colab (if not, you can skip)   
+Install the library with these commands 
 ![pip3 install](img/pipinstall.jpg)
 
 
@@ -179,7 +179,7 @@ twenty_train = fetch_20newsgroups(subset='train', categories=categories, shuffle
 
 If no errors occur, your environment is ready.
 
-### Alternative: Running in Kaggle
+### Alternative: Run in Kaggle
 If you cannot set up Python locally:
 Create an account: https://www.kaggle.com/
 Go to: https://www.kaggle.com/kernels → "New Notebook"
@@ -214,7 +214,7 @@ The TAs
 ---
 
 # Save your Progress by Push 
-Remember to save your notebooks. You will also have to "Push" the changes you've made in your computer to the internet. In order to do this, open a "Command Prompt" window in Windows or a "Terminal" window in MacOS/Linux. Type the following commands followed by the Enter key:
+Remember to save your notebooks. You will also have to "Push" the changes you've made in your computer to the internet. To do this, open a "Command Prompt" window in Windows or a "Terminal" window in macOS/Linux. Type the following commands followed by the Enter key: 
 
     cd <your path to the DM2025-Lab1-Exercise>
     git add *
@@ -227,7 +227,7 @@ You can replace "yourmessage" with something like "Finished Ex1 and Ex2. Added g
 
 # Hand in your Homework
 
-Go to the [DM Lab 1 Homework](https://github.com/leoson-wu/DM2025-Lab1-Exercise/blob/main/DM2025-Lab1-Homework.ipynb) in Git and follow the same process above.  Make sure to commit and save your changes to your repository __BEFORE the deadline for each phase (September 28th and October 19th 11:59 pm, Sunday)__. During the second phase, the answers from first phase will not be considered if can not be pushed on time.
+Go to the [DM Lab 1 Homework](https://github.com/leoson-wu/DM2025-Lab1-Exercise/blob/main/DM2025-Lab1-Homework.ipynb) in Git and follow the same process above.  Make sure to commit and save your changes to your repository __BEFORE the deadline for each phase (September 28th and October 19th, 11:59 pm, Sunday)__. During the second phase, the answers from the first phase will not be considered if they can not be pushed on time. 
 
 Make sure to hand in 2 notebooks, including: 
 1. Take home exercises from [DM Lab 1](https://github.com/leoson-wu/DM2025-Lab1-Exercise/blob/main/DM2025-Lab1-Master.ipynb)
@@ -235,9 +235,9 @@ Make sure to hand in 2 notebooks, including:
 
 ![gitpic6](img/gitpic6.png)
 
-When you're done (or at any moment), find your repository link. Open the **\[DM2025\] Homework 1** assignment page on our [NTU COOL platform](https://cool.ntu.edu.tw/login/portal) for each phase. Make a submission and paste the link to your git repository (or the link to your kaggle kernel). 
+When you're done (or at any moment), find your repository link. Open the **\[DM2025\] Homework 1** assignment page on our [NTU COOL platform](https://cool.ntu.edu.tw/login/portal) for each phase. Make a submission and paste the link to your git repository (or the link to your Kaggle kernel).  
 
-You can find your repository link by logging into [Github](https://github.com/), clicking on your profile icon on the upper right corner, selecting "Your repositories", and clicking on the name of your repository . Then copy the link in your browser. 
+You can find your repository link by logging into [Github](https://github.com/), clicking on your profile icon on the upper right corner, selecting "Your repositories", and clicking on the name of your repository. Then copy the link in your browser.  
 
 Again, __we will not consider pushes made after the deadline__. 
 
