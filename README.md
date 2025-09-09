@@ -16,7 +16,7 @@ This document provides detailed instructions for setting up the environment requ
 
 Please make sure you have the following installed:
 
-* Python 3.9.9
+* Python 3.11.0 (recommended)
 * uv (Python virtual environment manager)
 * Git
 * GitHub account
@@ -26,10 +26,10 @@ Please make sure you have the following installed:
 
 ## Setup Instructions
 
-### 1. Install Python 3.9.9
+### 1. Install Python 3.11.0 (If you use your own version, you take risk)
 
-Download and install Python 3.9.9:
-https://www.python.org/downloads/release/python-399/
+Download and install Python 3.11.0 (recommended):
+https://www.python.org/downloads/release/python-3110/
 
 During installation, check "**Add Python to PATH**".
 
@@ -39,7 +39,7 @@ Verify installation:
 python --version
 ```
 Expected output:
-Python 3.9.9  
+Python 3.11.0  
 
 ### 2. Create a GitHub Account and Install Git
 #### Sign up for GitHub: https://github.com/  
@@ -94,11 +94,6 @@ Below is an example, where I store my Lab in the "new" folder.
 
 ![gitpic4](img/gitpic4.png)
 
-
-
-
-
-
 ### 5. Install uv
 In terminal or PowerShell:
 
@@ -114,13 +109,15 @@ uv venv
 
 This creates a .venv folder inside the project.
 
-### 7. Add the Dependent Libraries
+### 7. Install the Dependent Libraries
 
+Navigate to directory:  `DM2025-Lab1-Exercise`  
+#### Quick install
 ```bash
 uv sync
 ```
 This installs all required Python packages: jupyter numpy pandas matplotlib plotly nltk scikit-learn seaborn pami umap-learn   
-### 8. (Optional) Manually install Libraries
+#### (Alternative) Manually install Libraries
 You may need to add libraries manually if the **step 8** cannot install the required libraries successfully:  
 ```bash
 uv add jupyter numpy pandas matplotlib plotly nltk scikit-learn seaborn pami umap-learn
@@ -129,18 +126,36 @@ You can also install extra libraries if needed.
 ```bash
 uv add <library_name>
 ```
-### 8. (Alternative) If you are using Kaggle or Colab (if not, you can skip)   
+#### (Alternative) If you are using Kaggle or Colab (if not, you can skip)   
 Install the library with these commands 
 ![pip3 install](img/pipinstall.jpg)
 
+### 8. Register Jupyter Kernel
+Navigate to directory:  `DM2025-Lab1-Exercise`  
+```bash
+uv run python -m ipykernel install --user --name=dm2025lab --display-name "Python (dm2025lab)"
+```
+### 9. Run Notebook  
+#### Run in VS Code
+If using VS Code:
+
+Open your terminal/PowerShell  
+```bash
+cd <your path to the DM2025-Lab1-Exercise>
+code
+```
+Open the `DM2025-Lab1-Master.ipynb`  
+
+Then select "Python (dm2025lab)" as the kernel in the top-right corner.  
+![vs code select jupyter kernel](img/vs_code.png)  
 
 
-### 9. Run Jupyter Notebook
+#### (Alternative) Run Jupyter Notebook in Browser  
 Start Jupyter:
 
 ```bash
 cd <your path to the DM2025-Lab1-Exercise>
-jupyter notebook
+uv run jupyter notebook
 ```
 ![jupyter notebook](img/pic3ann1.png)
 
@@ -148,37 +163,14 @@ If error occurs:
 
 ```bash
 python -m notebook
-```
-A browser window will open. Click "New" → "Python 3" to create a notebook.  
+```  
+A browser window will open.  
+Open the `DM2025-Lab1-Master.ipynb` 
+
+Select **Python (dm2025lab)** as the notebook kernel on the top-right corner.  
 ![open Jupyter](img/pic4ann1.png)
 
-### 10. Test Your Environment
-Open the `DM2025-Lab1-Master.ipynb`
-![test code](img/pic5ann1.png)
-Paste the script below into a notebook cell and run it:
-
-```Python
-import pandas as pd
-import numpy as np
-import nltk
-nltk.download('punkt') # download the NLTK datasets
-from sklearn.datasets import fetch_20newsgroups
-from sklearn.feature_extraction.text import CountVectorizer
-import plotly as py
-import math
-# !pip install PAMI
-import PAMI # if it cannot find the module 'PAMI', add a command line: !pip install PAMI before import it
-import umap
-
-categories = ['alt.atheism', 'soc.religion.christian', 'comp.graphics', 'sci.med']
-twenty_train = fetch_20newsgroups(subset='train', categories=categories, shuffle=True, random_state=42)
-```
-
-![test pic](img/testpic1.png)
-
-If no errors occur, your environment is ready.
-
-### Alternative: Run in Kaggle
+#### (Alternative) Run in Kaggle
 If you cannot set up Python locally:  
 Create an account: https://www.kaggle.com/  
 Go to: https://www.kaggle.com/kernels → "New Notebook"  
@@ -190,16 +182,34 @@ For missing libraries (e.g., PAMI), install manually:
 ```
 ![kaggle](img/pic8ann1.png)
 
-### Alternative: Run in VS Code
-If using VS Code, register your kernel:
 
-```bash
-cd <your path to the DM2025-Lab1-Exercise>
-code .
-uv run python -m ipykernel install --user --name=dm2025lab --display-name "Python (dm2025lab)"
+### 10. Test Your Environment
+Open the `DM2025-Lab1-Master.ipynb`
+
+Paste the script below into a notebook cell and run it:
+
+```Python
+# test code for environment setup
+import pandas as pd
+import numpy as np
+import nltk
+nltk.download('punkt') # download the NLTK datasets
+from sklearn.datasets import fetch_20newsgroups
+from sklearn.feature_extraction.text import CountVectorizer
+import plotly as py
+import math
+# !pip install PAMI
+import PAMI # if it cannot find the module 'PAMI', add a command line: !pip install PAMI before importing it
+import umap
+
+categories = ['alt.atheism', 'soc.religion.christian', 'comp.graphics', 'sci.med']
+twenty_train = fetch_20newsgroups(subset='train', categories=categories, shuffle=True, random_state=42)
 ```
-Then select "Python (dm2025lab)" as the kernel.
-![vs code jupyter kernel](img/pic11ann1.png)
+
+![test pic](img/testpic1.png)
+
+If no errors occur, your environment is ready.
+
 
 
 ### Troubleshooting
