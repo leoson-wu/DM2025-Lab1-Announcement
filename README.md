@@ -26,7 +26,7 @@ Please make sure you have the following installed:
 
 ## Setup Instructions
 
-### 1. Install Python 3.11.0 (If you use your own version, you take risk)
+### 1. Install Python 3.11.0 (If you use your own version, take your own risk of dependency issues)
 
 Download and install Python 3.11.0 (recommended):
 https://www.python.org/downloads/release/python-3110/
@@ -71,7 +71,7 @@ git config --global user.email "your_email@example.com"
 
 ### 3. Fork the Repository to your GitHub Account  
 Go to: [DM Lab 1](https://github.com/leoson-wu/DM2025-Lab1-Exercise.git) in GitHub,  
-Sign in to your GitHub account
+Sign in to your GitHub account  
 Click "Fork" to copy it into your own GitHub account.  
 ![fork](img/pic9ann1.png)
 
@@ -116,9 +116,9 @@ Navigate to directory:  `DM2025-Lab1-Exercise`
 ```bash
 uv sync
 ```
-This installs all required Python packages: jupyter numpy pandas matplotlib plotly nltk scikit-learn seaborn pami umap-learn   
+This installs all required Python packages: jupyter, numpy, pandas, matplotlib, plotly, nltk, scikit-learn, seaborn, pami, umap-learn   
 #### (Alternative) Manually install Libraries
-You may need to add libraries manually if the **step 8** cannot install the required libraries successfully:  
+You may need to add libraries manually if the **Quick install** cannot install the required libraries successfully:  
 ```bash
 uv add jupyter numpy pandas matplotlib plotly nltk scikit-learn seaborn pami umap-learn
 ```
