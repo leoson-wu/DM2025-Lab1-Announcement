@@ -68,7 +68,7 @@ git config --global user.email "your_email@example.com"
 ![git](img/pic6ann1.png)
 
 ### 3. Fork the Repository to your GitHub Account  
-Go to: [DM Lab 1](https://github.com/leoson-wu/DM2025-Lab1-Exercise.git) in Git,
+Go to: [DM Lab 1](https://github.com/leoson-wu/DM2025-Lab1-Exercise.git) in Git,  
 Sign in to your GitHub account   
 Click "Fork" to copy it into your own GitHub account.  
 ![fork](img/pic9ann1.png)
