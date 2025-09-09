@@ -91,6 +91,8 @@ Open a "Command Prompt" window in Windows or a "Terminal" window in macOS/Linux.
 Replace \<yourpath\> by the path where you're going to store your documents. 
 Below is an example, where I store my Lab in the "new" folder.
 
+Replace \<link you copied in the previous step\> with the URL link to your own fork of the repository in your GitHub account (not the TAs one)  
+
 ![gitpic4](img/gitpic4.png)
 
 ### 5. Install uv
