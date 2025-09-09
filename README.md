@@ -42,19 +42,19 @@ Python 3.9.9
 ### 2. Create a GitHub Account and Install Git
 #### Sign up for GitHub: https://github.com/  
 #### Install Git:  
-Windows: https://gitforwindows.org/  
-Linux:
+##### Windows: https://gitforwindows.org/  
+##### Linux:
 
 ```bash
 sudo apt install git-all
 ```
-macOS:
+##### macOS:
 
 
 ```bash
 brew install git
 ```
-Verify installation:
+#### Verify installation:
 
 ```bash
 git --version
@@ -87,7 +87,7 @@ Open a "Command Prompt" window in Windows or a "Terminal" window in MacOS/Linux.
     git init
     git clone <link you copied at the previous step>
     
-Replacing "yourpath" by the path where you're going to store your documents.
+Replacing \<yourpath\> by the path where you're going to store your documents.
 Below is an example, where I store my Lab in the "new" folder.
 
 ![gitpic4](img/gitpic4.png)
@@ -106,7 +106,7 @@ uv --version
 ```
 ### 6. Create a Virtual Environment with uv
 ```bash
-cd <your path to the DM2520Labs>\DM2025-Lab1-Exercise
+cd <your path to the DM2025-Lab1-Exercise>
 uv venv
 ```
 
@@ -128,12 +128,17 @@ You can also install extra libraries if needed.
 ```bash
 uv add <library_name>
 ```
+### 8. (Alternative) If you are using Kaggle or Colab (if not you can skip)  
+Install the library by these commands
+![pip3 install](img/pipinstall.jpg)
+
+
 
 ### 9. Run Jupyter Notebook
 Start Jupyter:
 
 ```bash
-cd <your path to the DM2520Labs>\DM2025-Lab1-Exercise
+cd <your path to the DM2025-Lab1-Exercise>
 jupyter notebook
 ```
 ![jupyter notebook](img/pic3ann1.png)
@@ -211,7 +216,7 @@ The TAs
 # Save your Progress by Push 
 Remember to save your notebooks. You will also have to "Push" the changes you've made in your computer to the internet. In order to do this, open a "Command Prompt" window in Windows or a "Terminal" window in MacOS/Linux. Type the following commands followed by the Enter key:
 
-    cd <your path to the DM2520Labs>\DM2025-Lab1-Exercise
+    cd <your path to the DM2025-Lab1-Exercise>
     git add *
     git commit -m "yourmessage"
     git push 
