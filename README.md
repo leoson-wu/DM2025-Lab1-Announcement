@@ -101,6 +101,8 @@ pip3 install uv
 uv --version
 ```
 ### 6. Create a Virtual Environment with uv
+Navigate to the project folder: `DM2025-Lab1-Exercise` and create Virtual Environment  
+The Virtual Environment must be created under the project folder: `DM2025-Lab1-Exercise`  
 ```bash
 cd <your path to the DM2025-Lab1-Exercise>
 uv venv
@@ -113,9 +115,9 @@ This creates a .venv folder inside the project.
 Under project folder:  `DM2025-Lab1-Exercise`  
 #### Install Libraries
 ```bash
-uv add jupyter numpy pandas matplotlib plotly nltk scikit-learn seaborn PAMI umap-learn
+uv add jupyter numpy pandas matplotlib plotly nltk scikit-learn seaborn pami umap-learn
 ```
-This installs all required Python packages: jupyter, numpy, pandas, matplotlib, plotly, nltk, scikit-learn, seaborn, PAMI, umap-learn   
+This installs all required Python packages: jupyter, numpy, pandas, matplotlib, plotly, nltk, scikit-learn, seaborn, pami, umap-learn   
 You can also install extra libraries if needed.  
 ```bash
 uv add <library_name>
@@ -123,13 +125,14 @@ uv add <library_name>
 #### (Alternative) If you are using Kaggle or Colab   
 Install the library via `pip3` instead of `uv`  
 ```bash
-pip3 install jupyter numpy pandas matplotlib plotly nltk scikit-learn seaborn PAMI umap-learn  
+pip3 install jupyter numpy pandas matplotlib plotly nltk scikit-learn seaborn pami umap-learn  
 ```
 Note: In Kaggle/Colab, Python version may differ (e.g., 3.10). Some packages could behave differently.
 
 ### 8. Register Jupyter Kernel
 Under project folder:  `DM2025-Lab1-Exercise`  
 ```bash
+uv activate venv
 uv run python -m ipykernel install --user --name=dm2025lab --display-name "Python (dm2025lab)"
 ```
 ### 9. Run Notebook  
@@ -175,7 +178,7 @@ Run the test script.
 For missing libraries (e.g., PAMI), install manually:  
 
 ```bash
-!pip3 install PAMI
+!pip3 install pami
 ```
 ![kaggle](img/pic8ann1.png)
 
@@ -185,7 +188,7 @@ Open the `DM2025-Lab1-Master.ipynb`
 
 Paste the script below into a notebook cell and run it:
 
-```Python
+```python
 # test code for environment setup
 import pandas as pd
 import numpy as np
