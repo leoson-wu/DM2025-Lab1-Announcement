@@ -241,4 +241,6 @@ You can find your repository link by logging into [Github](https://github.com/),
 
 Again, __we will not consider pushes made after the deadline__. 
 
+![deadline](img/Deadline.png)
+
 That's it! We wish you Good luck!
