@@ -221,7 +221,7 @@ Best regards,
 The TAs
 
 ---
-# If everthing is OK, you can start to do the lab ...
+# If everything is OK, you can start to do the lab ...
 ---
 
 # Save your Progress by Push 
@@ -236,22 +236,24 @@ You can replace "yourmessage" with something like "Finished Ex1 and Ex2. Added g
 
 ![gitpic7](img/gitpic7.png)
 
-# Hand in your Homework
+# Submission Guidelines and Deadline
 
-Go to the [DM Lab 1 Homework](https://github.com/leoson-wu/DM2025-Lab1-Exercise/blob/main/DM2025-Lab1-Homework.ipynb) in Git and follow the same process above.  Make sure to commit and save your changes to your repository __BEFORE the deadline for each phase (September 28th and October 19th, 11:59 pm, Sunday)__. During the second phase, the answers from the first phase will not be considered if they can not be pushed on time. 
+Go to the [DM Lab 1 Homework](https://github.com/leoson-wu/DM2025-Lab1-Exercise/blob/main/DM2025-Lab1-Homework.ipynb) in Git and follow the same process above. Make sure to commit and save your changes to your repository __BEFORE the deadline for each phase (September 28th and October 19th, 11:59 pm, Sunday)__. During the second phase, the answers from the first phase will not be considered if they can not be pushed on time. 
 
 Make sure to hand in 2 notebooks, including: 
-1. `DM2025-Lab1-Master.ipynb` from [DM Lab 1](https://github.com/leoson-wu/DM2025-Lab1-Exercise/blob/main/DM2025-Lab1-Master.ipynb)
+1. `DM2025-Lab1-Master.ipynb` from [DM Lab 1 Master](https://github.com/leoson-wu/DM2025-Lab1-Exercise/blob/main/DM2025-Lab1-Master.ipynb)
 2. `DM2025-Lab1-Homework.ipynb` from [DM Lab 1 Homework](https://github.com/leoson-wu/DM2025-Lab1-Exercise/blob/main/DM2025-Lab1-Homework.ipynb)
 
-![gitpic6](img/gitpic6.png)
+![deadline](img/Deadline.png)
 
-When you're done (or at any moment), find your repository link. Open the **\[DM2025\] Homework 1** assignment page on our [NTU COOL platform](https://cool.ntu.edu.tw/login/portal) for each phase. Make a submission and paste the link to your git repository (or the link to your Kaggle kernel).  
+When you're done (or at any moment), find your repository link. Open the assignment page on our [NTU COOL platform](https://cool.ntu.edu.tw/login/portal). Make a submission by pasting the link to your git repository (or the link to your Kaggle kernel) to **Lab 1 section**.  
+
+![ntucool submission](img/ntucool.png)
 
 You can find your repository link by logging into [Github](https://github.com/), clicking on your profile icon on the upper right corner, selecting "Your repositories", and clicking on the name of your repository. Then copy the link in your browser.  
 
 Again, __we will not consider pushes made after the deadline__. 
 
-![deadline](img/Deadline.png)
+
 
 That's it! We wish you Good luck!
