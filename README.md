@@ -241,9 +241,9 @@ You can replace "yourmessage" with something like "Finished Ex1 and Ex2. Added g
 ![gitpic7](img/gitpic7.png)
 # Submission Guidelines and Deadline
 
-Go to the [DM Lab 1 Homework](https://github.com/leoson-wu/DM2025-Lab1-Exercise/blob/main/DM2025-Lab1-Homework.ipynb) in Git and follow the same process above. Make sure to commit and save your changes to your repository __BEFORE the deadline for each phase (September 28th and October 19th, 11:59 pm, Sunday)__. During the second phase, the answers from the first phase will not be considered if they can not be pushed on time. 
+Make sure to commit and push your changes to your GitHub repository __BEFORE the deadline for each phase (September 28th and October 19th, 11:59 pm, Sunday)__. During the second phase, the answers from the first phase will not be considered if they can not be pushed on time. 
 
-Make sure to hand in 2 notebooks, including: 
+Make sure your repository must contains 2 notebooks, including: 
 1. `DM2025-Lab1-Master.ipynb` from [DM Lab 1 Master](https://github.com/leoson-wu/DM2025-Lab1-Exercise/blob/main/DM2025-Lab1-Master.ipynb)
 2. `DM2025-Lab1-Homework.ipynb` from [DM Lab 1 Homework](https://github.com/leoson-wu/DM2025-Lab1-Exercise/blob/main/DM2025-Lab1-Homework.ipynb)
 
