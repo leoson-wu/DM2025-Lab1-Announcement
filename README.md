@@ -21,7 +21,7 @@ Please make sure you have the following installed:
 * Git
 * GitHub account
 * Jupyter Notebook
-
+* VS Code (optional)
 ---
 
 ## Setup Instructions
