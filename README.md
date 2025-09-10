@@ -134,7 +134,6 @@ Note: In Kaggle/Colab, Python version may differ (e.g., 3.10). Some packages cou
 ### 8. Register Jupyter Kernel
 Under project folder:  `DM2025-Lab1-Exercise`  
 ```bash
-uv activate venv
 uv run python -m ipykernel install --user --name=dm2025lab --display-name "Python (dm2025lab)"
 ```
 ### 9. Run Notebook  
