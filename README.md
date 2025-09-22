@@ -116,6 +116,14 @@ This creates a .venv folder inside the project.
 
 Under project folder:  `DM2025-Lab1-Exercise`  
 #### Install Libraries
+##### By `uv sync` (recommend)
+```bash  
+uv sync
+```
+This will install all the libraries with the same version as the TA's environment.  
+<span style="color:red">If you encounter version dependency issues, please run this command instead of the following one.</span>
+
+##### Manually (alternatively)   
 ```bash
 uv add jupyter numpy pandas matplotlib plotly nltk scikit-learn seaborn pami umap-learn
 ```
